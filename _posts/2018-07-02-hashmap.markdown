@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "HashMap"
+date:   2018-07-02 15:00:00 +0800
+categories: java基础 数据结构
+---
+##HashMap
+HashMap是使用次数特别多的Collection，它是基于哈希表的Map接口的实现
+##HashMap扩容
+resize()
