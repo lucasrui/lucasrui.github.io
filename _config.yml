@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
+  - category.md
   - archives.md
   - about.md
 # Exclude from processing.
