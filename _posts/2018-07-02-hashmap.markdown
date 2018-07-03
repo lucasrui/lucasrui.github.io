@@ -4,7 +4,20 @@ title:  "HashMap"
 date:   2018-07-02 15:00:00 +0800
 categories: java基础 数据结构
 ---
-##HashMap
-HashMap是使用次数特别多的Collection，它是基于哈希表的Map接口的实现
-##HashMap扩容
+## HashMap
+HashMap是使用非常频繁的Collection，它是基于哈希表的Map接口的实现
+## HashMap扩容
 resize()
+经过rehash之后，元素的位置要么是在原位置，要么是在原位置再移动2次幂的位置。对应的就是下方的resize的注释。
+```java
+/**
+ * Initializes or doubles table size.  If null, allocates in
+ * accord with initial capacity target held in field threshold.
+ * Otherwise, because we are using power-of-two expansion, the
+ * elements from each bin must either stay at same index, or move
+ * with a power of two offset in the new table.
+ *
+ * @return the table
+ */
+final Node<K,V>[] resize() {}
+```

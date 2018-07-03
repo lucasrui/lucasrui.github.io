@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Javascript常用操作"
+date:   2018-07-03 11:00:00 +0800
+categories: javascript
+---
+## 场景：修改网页body节点下的一部分符合条件的div的内容
+1. 遍历body的子元素
+2. 判断子元素是否符合条件
+3. 修改子元素的值
+
+**使用到的javascript原生方法如下：**
+1. getElementsByTagName(tag)：根据tag查找，返回值是一个数组
+2. hasChildNodes()：判断是否有子节点
+3. nodeType：{元素element:1,属性attr:2,文本text:3,注释comments:8,文档document:9}
+4. innerText：设置元素显示的值
+5. indexOf：String的操作，用于获取a字符串在b字符串中的位置，不存在则返回-1
+
+```javascript
+var body = document.getElementsByTagName('body')[0];
+if (body.hasChildNodes() && body.nodeType == 1) {
+    for (var i = 0; i < body.childNodes.length; i++) {
+        if(body.childNodes[i].nodeType == 1) {
+            if (body.childNodes[i].id.indexOf("mask") == 0) {
+              body.childNodes[i].innerText = "背锅侠";
+            }
+        }
+    }
+}
+```
