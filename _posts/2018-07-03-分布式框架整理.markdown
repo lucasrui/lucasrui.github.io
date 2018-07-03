@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "分布式框架须知"
+date:   2018-07-03 15:00:00 +0800
+categories: 分布式 框架
+---
+分布式需要了解的技术栈
+1. RPC调用
+    1. dubbo
+    2. motan
+2. 消息队列
+    1. kafka
+    2. rocketMq
+3. 缓存
+    1. redis
+    2. ehcache
+4. 数据库
+    1. cobar（分库分表）
+5. 配置中心
+6. 分布式任务调度
+7. 注册中心
+    1. zookeeper
+    2. consul
