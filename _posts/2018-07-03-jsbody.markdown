@@ -22,7 +22,7 @@ if (body.hasChildNodes() && body.nodeType == 1) {
     for (var i = 0; i < body.childNodes.length; i++) {
         if(body.childNodes[i].nodeType == 1) {
             if (body.childNodes[i].id.indexOf("mask") == 0) {
-              body.childNodes[i].innerText = "陈大年";
+              body.childNodes[i].innerText = "本泽马";
             }
         }
     }
