@@ -26,7 +26,8 @@ categories: 网络
 
 ## 补充
 ### RSA非对称加密原理
-
+可以参考[https://baike.baidu.com/item/非对称加密算法](https://baike.baidu.com/item/非对称加密算法)
 ### https使用会话秘钥进行对称加密
 非对称加密相对复杂度更高，在传输过程中，对称加密可以节省计算资源
 ### ssl
+ssl全称secure socket layer，安全套接层，后来还有升级版本tls（Transport Layer Security传输层安全），他们在传输层对网络连接进行加密。https与http的区别主要就是多了一层ssl。

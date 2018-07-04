@@ -6,6 +6,7 @@ categories: Java基础 数据结构
 ---
 ## HashMap
 HashMap是使用非常频繁的Collection，它是基于哈希表的Map接口的实现
+## HashMap存储结构
 ## HashMap扩容
 resize()
 经过rehash之后，元素的位置要么是在原位置，要么是在原位置再移动2次幂的位置。对应的就是下方的resize的注释。
