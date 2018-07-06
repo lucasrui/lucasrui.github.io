@@ -10,7 +10,7 @@ docker pull zookeeper
 ```
 2. 启动 ZK 镜像
 ```
-docker run --name my_zookeeper -d zookeeper:latest
+docker run --name my_zookeeper -d -p 2181:2181 zookeeper:latest
 ```
 * 这个命令会在后台运行一个 zookeeper 容器, 名字是 my_zookeeper, 并且它默认会导出 2181 端口.
 3. 查看zk运行情况
